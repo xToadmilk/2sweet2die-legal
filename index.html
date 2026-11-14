@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kick It – Datenschutz / Privacy</title>
+<style>
+  :root { --bg: #fff8f2; --ink: #3a2a3a; --muted: #7a6a7a; --accent: #e8508a; --card: #ffffff; --line: #f0dfe6; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #1f1820; --ink: #f3e9ef; --muted: #b9a8b4; --accent: #ff7aa8; --card: #2a2129; --line: #3d313b; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  main { max-width: 760px; margin: 0 auto; padding: 32px 16px 64px; }
+  h1 { font-size: 2rem; margin: 0 0 4px; }
+  h2 { margin-top: 2.2em; color: var(--accent); }
+  h3 { margin-top: 1.6em; margin-bottom: .3em; }
+  a { color: var(--accent); }
+  nav { margin: 8px 0 24px; }
+  nav a { margin-right: 16px; font-weight: 600; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 4px 20px 12px; margin-top: 16px; }
+  .muted { color: var(--muted); font-size: .9rem; }
+  ul { padding-left: 1.2em; }
+</style>
+</head>
+<body>
+<main>
+<h1>Kick It</h1>
+<p class="muted">Testversion · Stand: 14.11.2026</p>
+<nav><a href="#de">Deutsch</a><a href="#en">English</a></nav>
+
+<!-- ============================== DEUTSCH ============================== -->
+<section id="de" lang="de">
+<h2>Datenschutzhinweise</h2>
+<p>Kick It ist ein Spiel in einer kostenlosen Testphase. Es gibt keine Konten, keine Werbung, keine Analyse- oder Tracking-Dienste und keine Cookies. Diese Seite erklärt, welche Daten trotzdem anfallen und wohin sie gehen.</p>
+
+<div class="card">
+<h3>Verantwortlich</h3>
+<p>[DEIN NAME]<br>E-Mail: <a href="mailto:[DEINE E-MAIL]">[DEINE E-MAIL]</a></p>
+</div>
+
+<h3>1. Auf deinem Gerät</h3>
+<p>Einstellungen (Lautstärke, Sprache, Bot-Schwierigkeit usw.) und dein Spielername werden nur lokal auf deinem Gerät gespeichert und nicht an uns übertragen.</p>
+
+<h3>2. Online spielen</h3>
+<p>Für Online-Räume verbinden sich die Spieler direkt miteinander (Peer-to-Peer). Dabei gilt:</p>
+<ul>
+  <li><strong>Vermittlungsserver</strong> (Cloudflare Workers, Cloudflare, Inc., USA): bringt Spieler über den Raumcode zusammen. Verarbeitet werden technisch nötige Verbindungsdaten (IP-Adresse), der Raumcode und bei öffentlichen Räumen der Raumname, die Spielerzahl und der Spielmodus für die Raumliste. Ein Raumeintrag verschwindet, sobald der Raum geschlossen wird, spätestens nach 75 Sekunden ohne Lebenszeichen.</li>
+  <li><strong>Mitspieler</strong>: Bei einer direkten Verbindung können deine Mitspieler technisch deine IP-Adresse sehen. Dein Spielername wird an die Spieler im selben Raum übertragen.</li>
+  <li><strong>Verbindungshilfen</strong>: Damit die direkte Verbindung klappt, werden STUN-Server von Google (Google LLC, USA) und bei Bedarf ein Relay-Server von Cloudflare genutzt. Diese sehen deine IP-Adresse.</li>
+  <li><strong>Windows-Version</strong>: Klappt keine direkte Verbindung, nutzt das Spiel als Rückfall die Epic Online Services (Epic Games, Inc., USA) mit einer anonymen, technischen Kennung. Ein Epic-Konto ist nicht nötig. Siehe <a href="https://www.epicgames.com/site/privacypolicy">Datenschutzerklärung von Epic</a>.</li>
+</ul>
+<p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (du möchtest online spielen, dafür sind diese Daten technisch nötig).</p>
+
+<h3>3. Feedback und Level-Bewertungen</h3>
+<p>Wenn du freiwillig Feedback sendest oder ein Level bewertest („Mag ich / Mag ich nicht“), werden folgende Daten in einer Google-Tabelle gespeichert (Google Apps Script und Google Sheets, Google Ireland Ltd. / Google LLC):</p>
+<ul>
+  <li>Zeitpunkt, Kategorie und Text deiner Nachricht</li>
+  <li>optional eine Kontaktangabe, falls du eine einträgst (z. B. Discord-Name)</li>
+  <li>bei Bewertungen: Level, Runde, deine Stimme und deine Platzierung</li>
+  <li>technische Angaben: Spielversion, Plattform, Sprache, aktuelle Szene</li>
+</ul>
+<p>Dein Spielername wird dabei nicht mitgeschickt. Google verarbeitet beim Senden technisch deine IP-Adresse, sie wird aber nicht in die Tabelle geschrieben. Wir nutzen die Daten nur, um das Spiel zu verbessern, und löschen sie spätestens 12 Monate nach Ende der Testphase. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (unser Interesse, das Spiel anhand von Rückmeldungen zu verbessern). Bitte schreib keine sensiblen Daten in das Feedback.</p>
+
+<h3>4. Browser-Version</h3>
+<p>Spielst du im Browser, wird das Spiel von der jeweiligen Plattform ausgeliefert (z. B. itch.io). Dafür gilt deren Datenschutzerklärung, z. B. die von <a href="https://itch.io/docs/legal/privacy-policy">itch.io</a>.</p>
+
+<h3>5. Übermittlung in die USA</h3>
+<p>Cloudflare, Google und Epic sitzen (auch) in den USA. Die Übermittlung erfolgt auf Grundlage des EU-US Data Privacy Framework bzw. von Standardvertragsklauseln der EU-Kommission.</p>
+
+<h3>6. Deine Rechte</h3>
+<p>Du hast das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch (Art. 15–21 DSGVO). Schreib dazu einfach eine E-Mail an die oben genannte Adresse. Wenn du Feedback löschen lassen willst, nenn uns ungefähr Zeitpunkt und Inhalt, da wir es sonst keiner Person zuordnen können. Außerdem kannst du dich bei einer Datenschutz-Aufsichtsbehörde beschweren.</p>
+</section>
+
+<!-- ============================== ENGLISH ============================== -->
+<section id="en" lang="en">
+<h2>Privacy notice</h2>
+<p>Kick It is a game in a free test phase. There are no accounts, no ads, no analytics or tracking services and no cookies. This page explains which data is processed anyway and where it goes.</p>
+
+<div class="card">
+<h3>Controller</h3>
+<p>[DEIN NAME]<br>Email: <a href="mailto:[DEINE E-MAIL]">[DEINE E-MAIL]</a></p>
+</div>
+
+<h3>1. On your device</h3>
+<p>Settings (volume, language, bot difficulty etc.) and your player name are stored only locally on your device and are not sent to us.</p>
+
+<h3>2. Playing online</h3>
+<p>For online rooms, players connect directly to each other (peer-to-peer):</p>
+<ul>
+  <li><strong>Matchmaking server</strong> (Cloudflare Workers, Cloudflare, Inc., USA): brings players together via the room code. It processes the technically required connection data (IP address), the room code and, for public rooms, the room name, player count and game mode for the room list. A room entry disappears as soon as the room closes, at the latest after 75 seconds without a heartbeat.</li>
+  <li><strong>Other players</strong>: With a direct connection, other players can technically see your IP address. Your player name is shared with the players in the same room.</li>
+  <li><strong>Connection helpers</strong>: To establish the direct connection, STUN servers by Google (Google LLC, USA) and, if needed, a relay server by Cloudflare are used. They see your IP address.</li>
+  <li><strong>Windows version</strong>: If no direct connection is possible, the game falls back to Epic Online Services (Epic Games, Inc., USA) with an anonymous technical ID. No Epic account is required. See <a href="https://www.epicgames.com/site/privacypolicy">Epic's privacy policy</a>.</li>
+</ul>
+<p>Legal basis: Art. 6(1)(b) GDPR (you want to play online, and this data is technically required for it).</p>
+
+<h3>3. Feedback and level ratings</h3>
+<p>If you voluntarily send feedback or rate a level ("Like / Dislike"), the following data is stored in a Google spreadsheet (Google Apps Script and Google Sheets, Google Ireland Ltd. / Google LLC):</p>
+<ul>
+  <li>time, category and text of your message</li>
+  <li>optionally a contact detail, if you enter one (e.g. Discord name)</li>
+  <li>for ratings: level, round, your vote and your placement</li>
+  <li>technical details: game version, platform, language, current scene</li>
+</ul>
+<p>Your player name is not sent. Google technically processes your IP address when sending, but it is not written to the spreadsheet. We only use this data to improve the game and delete it at the latest 12 months after the end of the test phase. Legal basis: Art. 6(1)(f) GDPR (our interest in improving the game based on feedback). Please do not include sensitive data in your feedback.</p>
+
+<h3>4. Browser version</h3>
+<p>If you play in the browser, the game is delivered by the respective platform (e.g. itch.io), whose privacy policy applies, e.g. <a href="https://itch.io/docs/legal/privacy-policy">itch.io's</a>.</p>
+
+<h3>5. Transfers to the USA</h3>
+<p>Cloudflare, Google and Epic are (also) based in the USA. Transfers are based on the EU-US Data Privacy Framework or the EU Commission's standard contractual clauses.</p>
+
+<h3>6. Your rights</h3>
+<p>You have the right to access, rectification, erasure, restriction of processing, data portability and objection (Art. 15–21 GDPR). Just send an email to the address above. If you want feedback deleted, tell us roughly when you sent it and what it said, since we cannot link it to a person otherwise. You also have the right to lodge a complaint with a data protection supervisory authority.</p>
+</section>
+</main>
+</body>
+</html>
